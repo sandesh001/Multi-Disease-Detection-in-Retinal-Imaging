@@ -1,7 +1,7 @@
 '''
-Created on 12-Nov-2019
+Created on 12-Nov-2021
 
-@author: Ravi
+@author: Sandesh
 ''' 
 import os
 import tensorflow as tf
@@ -48,9 +48,7 @@ channels = 3
 train_dir = '/mnt/komal/Sandesh/RFMID/Evaluation_Set/'
      
 path1 = sorted(glob.glob('/mnt/komal/Sandesh/RFMID/Evaluation_Set/' + '*' + '.png'))   
-# path2 = sorted(glob.glob('/mnt/X/Ravi K/RIDD/Training_Set/processed/2_class/cropped/Augment/test_set/Normal/' + '*' + '.png'))   
-
-
+ 
 # #  
 test_images = path1 
 print(len(test_images))
@@ -58,11 +56,9 @@ print(len(test_images))
 # random.shuffle(test_images)
 
 out_path = '/mnt/komal/Sandesh/RFMID/'
-# out_path = '/mnt/x/Ravi K/Other/ISBI_2019_challenge/iChallenge_AMD/results/prediction/'
 # os.makedirs(path2write)
 
 modelPath = '/mnt/komal/Sandesh/RFMID/Training_Set/RFMID1.h5'
-# modelPath = '/mnt/X/Aman/Opthalmology/cropped and resized data/380/model_norm/effic_B4_noisy_new1.131-0.882331-0.840764.h5'
 
 imheight = 380
 imwidth = 380
